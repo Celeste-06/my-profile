@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celeste</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <p class="site-label">✦ CELESTE'S PERSONAL PROFILE ✦</p>
+    <h1>My Piece Of The Internet</h1>
+    <nav>
+        <button id="theme-toggle" type="button">
+  ☼ Light mode
+</button>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <aside class="profile-card">
+    <img
+  class="avatar"
+  src="images/avatar.png"
+  alt="My profile avatar"
+>
+      <h2>Celeste</h2>
+      <p>I'm still figuring things out ♡</p>
+      <p class="status">● currently developing</p>
+      <div class="badges">
+  <span class="badge">✦ beginner coder</span>
+  <span class="badge">♡ music enjoyer</span>
+  <span class="badge">☾ sleep deprived</span>
+</div>
+      <button id="hello-button">Say hello</button>
+    </aside>
+
+    <div class="content">
+      <section id="about">
+        <h2>♡ About Me</h2>
+        <p>
+          You're one of the first people to see this!
+            Thank you for visiting my page!
+        </p>
+
+        <details>
+          <summary>See more...</summary>
+          <p>
+            I'm learning to make websites.
+            One day this page will be full of
+            all sorts of things.
+          </p>
+        </details>
+      </section>
+
+      <section id="interests">
+        <h2>✧ Things I Like</h2>
+        <ul>
+          <li>Music</li>
+          <li>Games</li>
+          <li>The people with access to this page</li>
+          <li>Coding, Evidently</li>
+        </ul>
+
+        <details>
+          <summary>My current favourites...</summary>
+          <p>ULTRAKILL, GACKT, Genshin Impact, Gurren Lagann</p>
+        </details>
+      </section>
+
+      <section id="music">
+  <h2>♫ On Repeat</h2>
+
+  <div class="music-card">
+    <div class="music-icon">♫</div>
+
+    <div class="music-info">
+      <h3>Current Favourite</h3>
+      <p>What I've been listening to</p>
+    </div>
+  </div>
+
+  <button id="music-button" aria-expanded="false">
+    Reveal my pick
+  </button>
+
+  <p id="music-reveal" hidden>
+    Lyn – Throw Away Your Mask ♡
+  </p>
+</section>
+
+      <section>
+        <h2>✦ Random Things</h2>
+        <p>A zone with untapped potential</p>
+        <button id="secret-button">Open the test panel</button>
+      </section>
+    </div>
+  </main>
+<!-- Pop-up window -->
+<div id="popup" class="popup-overlay" hidden>
+  <div
+    class="popup-window"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="popup-title"
+  >
+    <div class="popup-header">
+      <h2 id="popup-title">Hello!</h2>
+      <button id="close-popup" aria-label="Close pop-up">
+        ×
+      </button>
+    </div>
+
+    <p id="popup-message">
+      Welcome to my little piece of the internet!
+    </p>
+  </div>
+</div>
+  <footer>
+    <p>made with ♡ by me · 2026</p>
+  </footer>
+</body>
+</html>
